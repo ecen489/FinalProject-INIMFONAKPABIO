@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fff"
+        android:text="Fitness Buddy"
+        android:textSize="32sp"
+        android:fontFamily="casual"
+        android:layout_marginVertical="40sp"/>
+
+    <EditText
+        android:id="@+id/unameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300sp"
+        android:hint="username"
+        android:textColor="#ffffff"
+        android:drawableStart="@drawable/ic_person_24dp"
+        android:drawablePadding="15sp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/pswdEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="300sp"
+        android:hint="password"
+        android:textColor="#ffffff"
+        android:drawableStart="@drawable/ic_lock_24dp"
+        android:drawablePadding="15sp"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#fff"
+        android:layout_marginTop="20sp"
+        android:background="#c65c5a"
+        android:onClick="callLogin"/>
+
+    <Button
+        android:layout_width="130sp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:background="@drawable/button_bg"
+        android:text="Sign up"
+        android:textColor="#fff"
+        android:onClick="callCreateAccount"/>
+
+
+
+</LinearLayout>
